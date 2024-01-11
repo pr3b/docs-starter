@@ -10,7 +10,7 @@ navigation:
         path: ./docs/pages/introduction.mdx
       - page: Quickstart
         path: ./docs/pages/quickstart.mdx
-  - api: API Reference
+  # - api: API Reference
 
 navbar-links:
   - type: secondary
@@ -22,12 +22,12 @@ navbar-links:
 
 colors:
   accentPrimary:
-    dark: "#adff8c"
-    light: "#376d20"
+    dark: "#9891ff"
+    light: "#4F46E5"
 
 logo:
-  dark: ./docs/assets/logo_dark_mode.png
-  light: ./docs/assets/logo_light_mode.png
+  dark: ./docs/assets/polytomic-dark.svg
+  light: ./docs/assets/polytomic-light.svg
   height: 30
 
-favicon: ./docs/assets/favicon.ico
+favicon: ./docs/assets/polytomic-favicon.svg
