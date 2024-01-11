@@ -46,6 +46,21 @@ service:
             error: MovieDoesNotExistError
             body: tt1234
 
+    update:
+      display-name: Update a Movie by ID
+      method: PUT
+      path: /{id}
+      path-parameters:
+        id: MovieId
+      request: UpdateMovieRequest
+      examples:
+        - path-parameters:
+            id: tt2294629
+          request:
+            year: "2019"
+      errors:
+        - MovieDoesNotExistError
+
     delete:
       display-name: Delete a Movie by ID
       method: DELETE
@@ -58,20 +73,6 @@ service:
       errors:
         - MovieDoesNotExistError
 
-    update:
-      display-name: Update a Movie by ID
-      method: PUT
-      path: /{id}
-      path-parameters:
-        id: MovieId
-      request: UpdateMovieRequest
-      examples:
-        - path-parameters:
-            id: tt2294629
-          request: 
-            year: "2019"
-      errors:
-        - MovieDoesNotExistError
 types:
   MovieId:
     type: string
